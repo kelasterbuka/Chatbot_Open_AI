@@ -1,0 +1,50 @@
+body {
+	height:100vh;
+
+}
+
+.app > .screen {
+	display: none;
+}
+
+.app > .screen.active {
+	display:block;
+}
+
+.chat-screen .messages {
+	width: 100%;
+	height: calc(100vh - 130px);
+	background: #e3f9ff;
+	overflow: auto;
+}
+
+.chat-screen .messages .message {
+	display: flex;
+	padding: 10px;
+	font-size: 20px;
+}
+
+.chat-screen .messages .message > div {
+	max-width: 80%;
+	background: #ffffff;
+	box-shadow: 0px 0px 20px 5px rgba(0, 145, 255, 0.05);
+	padding: 10px;
+}
+
+.chat-screen .messages .message.my-message {
+	justify-content: flex-end;
+}
+
+.chat-screen .messages .message.other-message {
+	justify-content: flex-start;
+}
+
+.chat-screen .messages .message .name {
+	font-size: 13px;
+	color: #555;
+	margin-bottom: 5px;
+}
+
+.chat-screen .messages .message .text {
+	word-wrap: break-word;
+}

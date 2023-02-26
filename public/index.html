@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="app container bg-light h-100 w-50 p-0">
+		<div class="screen join-screen active">
+			<div class="position-absolute top-50 start-50 translate-middle">
+				<h2 class="border-bottom border-primary mb-3">Join Chatroom</h2>
+				<div class="form-input">
+					<label class="form-label">Username</label>
+					<input class="form-control mb-3" type="text" name="username" id="username">
+					<button class="btn btn-primary" id="join-user">Join</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="screen chat-screen ">
+			<div class="navbar bg-primary ">
+				<h1 class="display-6 text-light ms-4">Chatroom</h1>
+				<button class="btn btn-light me-4" id="exit-chat">Exit</button>
+			</div>
+			<div class="messages">
+
+			</div>
+			<div class=" sticky-bottom input-group">
+				<input type="text" class="form-control" placeholder="question" aria-label="question" aria-describedby="send-message" id="message-input">
+  				<button class="btn btn-outline-primary" type="button" id="send-message">send</button>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
